@@ -35,6 +35,9 @@ function getWeather() {
             const weatherIcon = document.getElementById("weatherIcon");
             weatherIcon.src = iconURL;
             weatherIcon.style.display = "block";
+            document.getElementById("wind").innerText =
+                `Wind Speed: ${data.wind.speed} m/s`;
         })
         .catch(err => alert("Error fetching data: " + err));
 }
+
