@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+
+    /* Animated Gradient Background */
+    background: linear-gradient(270deg, #6dd5fa, #2980b9, #a1c4fd, #c2e9fb);
+    background-size: 800% 800%;
+    animation: gradientAnimation 15s ease infinite;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    text-align: center;
+    margin-top: 40px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #2980b9;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1f6693;
+}
+
+/* Weather icon styling */
+#weatherIcon {
+    margin-top: 10px;
+}
